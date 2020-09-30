@@ -1,0 +1,1 @@
+module.exports = (content, map, meta) => content.replace(/(<img\s+[^>]*src=)(["'`])(((?!\2).)+)(\2)([^>]*>)/g, '$1{require($2$3$5)}$6');

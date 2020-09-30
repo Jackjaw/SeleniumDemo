@@ -1,0 +1,83 @@
+@font-face{
+    font-family: "larch";
+    src: url("../font/brightlarch.eot");
+    src: url("../font/brightlarch.eot?#iefix") format("embedded-opentype"),
+         url("../font/brightlarch.woff") format("woff"),
+         url("../font/brightlarch.ttf") format("truetype"),
+         url("../font/brightlarch.svg") format("svg");
+}
+::selection {
+    color: #ffffff;
+    background-color: #009966;
+}
+html {
+    height: 100%;
+    font: 14px/1.5 "Helvetica","Trebuchet MS","Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",sans-serif;
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    max-width: 1640px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: #cde6c7;
+}
+body::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 2.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    border: none;
+}
+a {
+    outline: none;
+    color: #333333;
+    text-decoration: none;
+}
+input[type="text"] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 1440px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+    body::after {
+        height: 2rem;
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        min-width: 280px;
+    }
+}

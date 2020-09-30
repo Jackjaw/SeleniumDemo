@@ -1,0 +1,21 @@
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+#footer > p {
+    color: #96b487;
+    text-align: center;
+    text-shadow: 1px 1px #edf6ea;
+    cursor: default;
+    user-select: none;
+}
+#footer > p > a {
+    color: #2e6b3e;
+}
+#footer > p > abbr {
+    border-bottom: none;
+    text-decoration: none;
+}
