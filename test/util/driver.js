@@ -3,7 +3,7 @@ const { Builder } = require('selenium-webdriver');
 
 const GetDriver = async () => {
     let options = new Options();
-    options.addArguments(['--disable-extensions', '--window-size=1920x900']).headless();
+    options.addArguments(['--disable-extensions', '--window-size=1920x900', '--no-sandbox', '--disable-dev-shm-usage']).headless();
     let driver = await new Builder().forBrowser('chrome').setChromeOptions(options).build();
     await driver.get('http://localhost:3000');
     await driver.manage().window().maximize();
