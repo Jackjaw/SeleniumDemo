@@ -13,6 +13,6 @@ const GetDriver = async () => {
 const CloseDriver = async driver => {
     await driver.sleep(3000);
     await driver.quit();
-}
+};
 
 module.exports = {GetDriver, CloseDriver};
