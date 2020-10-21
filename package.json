@@ -60,7 +60,7 @@
     "start": "webpack --mode development",
     "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "test": "node ./node_modules/mocha/bin/mocha ./test/*.js --require './test/util/hooks.js'"
+    "test": "node ./node_modules/mocha/bin/mocha --reporter mocha-teamcity-reporter ./test/*.js --require './test/util/hooks.js'"
   },
   "repository": {
     "type": "git",
