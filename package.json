@@ -54,7 +54,8 @@
     "url-loader": "^2.1.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.8.0",
+    "mocha-teamcity-reporter": ">=2.0.0"
   },
   "scripts": {
     "start": "webpack --mode development",
