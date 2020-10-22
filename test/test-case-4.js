@@ -6,7 +6,6 @@ describe('case-4', function () {
     let driver;
     beforeEach(async () => {
         this.timeout(5000);
-        new Promise(resolve => {setTimeout(()=>{console.log("wait for 10s")}, 10000)})
         driver = this.driver = await GetDriver('http://localhost:3000');
     });
     it('event-1', function () {
